@@ -1,4 +1,4 @@
-## 3D Portfolio
+## Data Analyst Portfolio
 
 ![](DataAnalystPortfolio.png)
 
