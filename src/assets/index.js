@@ -2,36 +2,26 @@ import logo from './logo.png';
 import github from './github.png';
 import menu from './menu.svg';
 import close from './close.svg';
-import CarlPc from './gaming-pc-cee.png';
-import Geo3D from './3d-geo.gif';
+import Carl from './Carl-Profile-Faded.png';
 
 // Skills //
-import HTML from './skills/html.png';
-import CSS from './skills/css.png';
-import JavaScript from './skills/javascript.png';
-import ReactPic from './skills/react.png';
-import Bootstrap from './skills/bootstrap.png';
-import MUI from './skills/mu5.png';
-import Node from './skills/node.png';
 import MongoDB from './skills/mongoDB.svg';
-import Vue from './skills/vue.png';
-import SASS from './skills/sass.png';
-import JQuery from './skills/jquery.png';
-import HtmlBrackets from './skills/html-brackets.png';
-import Tailwind from './skills/tailwind.png';
-import TypeScript from './skills/typescript.png';
-import NextJS from './skills/next-js.png';
-import Docker from './skills/docker.png';
 import SQL from './skills/sql.png';
-import AWS from './skills/aws.png';
+import MySQL from './skills/my-sql.png';
+import Excel from './skills/excel.png';
+import R from './skills/r.png';
+import Python from './skills/python.png';
+import Tableau from './skills/tableau.png';
+import Powerpoint from './skills/powerpoint.png';
+import GoogleSheets from './skills/google-sheets.png';
+import BigQuery from './skills/bigQuery.png';
+import OracleDB from './skills/oracle.png';
 
 import ramani from './company/ramani-icon.png';
-import webflix from './webflix.png';
-import dashboard from './dashboard.png';
-import moodsU from './moods-u.png';
-import herbNation from './herb-nation.jpg';
-import pizzeria from './pizzeria-modi.jpg';
-import mbank from './mbank.png';
+
+// Projects
+import LondonBiking from './london_biking.png';
+import HrAnalytics from './hr_analytics.png';
 
 // Testimonials
 
@@ -44,33 +34,21 @@ export {
 	menu,
 	close,
 	ramani,
-	HTML,
-	CSS,
-	JavaScript,
-	ReactPic,
-	Bootstrap,
-	MUI,
-	Node,
 	MongoDB,
-	Vue,
-	SASS,
-	Tailwind,
-	JQuery,
-	TypeScript,
-	NextJS,
-	Docker,
 	SQL,
-	AWS,
-	HtmlBrackets,
-	webflix,
-	dashboard,
-	herbNation,
-	pizzeria,
+	MySQL,
+	Excel,
+	R,
+	Python,
+	Tableau,
+	Powerpoint,
+	GoogleSheets,
+	BigQuery,
+	OracleDB,
 	Herman,
 	Gideon,
 	Debbie,
-	CarlPc,
-	Geo3D,
-	moodsU,
-	mbank
+	Carl,
+	LondonBiking,
+	HrAnalytics
 };

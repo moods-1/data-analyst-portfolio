@@ -1,4 +1,4 @@
-import { CarlPc, Geo3D } from '../assets';
+import { Carl } from '../assets';
 
 const Hero = () => {
 	return (
@@ -13,29 +13,18 @@ const Hero = () => {
 						Hi, I'm <span className='text-purple'>Carl</span>
 					</p>
 					<p className='hero-sub-text'>
-						I develop full stack applications{' '}
-						<br className='sm:block hidden' /> that generate memorable UI/UX
-						experiences.
+						I am a data analyst with a<br className='sm:block hidden' /> passion for transforming data<br className='sm:block hidden' />
+						into compelling visual experiences.
 					</p>
 				</div>
 			</div>
-			<div className='absolute top-20 right-10 hidden xl:block'>
-				<a href=' https://carl-3d-portfolio.web.app' rel='noopener noreferrer'>
-					<button className='bg-purple w-[180px] flex justify-center items-center py-1 rounded-md animate-pulse'>
-						<div
-							className='w-[20px] h-[20px] mr-2 bg-contain'
-							style={{ backgroundImage: `url(${Geo3D})` }}
-						/>
-						3D Site *
-					</button>
-				</a>
-				<p className='text-[12px] mt-1'>* Recommended for desktops</p>
+			<div className='w-[95%] max-w-lg lg:max-w-2xl absolute translate-x-1/2 lg:translate-x-0 right-1/2 lg:right-5 top-[380px] lg:top-0 opacity-40'>
+				<img
+					src={Carl}
+					alt='carl-pc'
+					width='100%'
+				/>
 			</div>
-			<img
-				src={CarlPc}
-				alt='carl-pc'
-				className='w-[95%] md:w-[60%] absolute top-[50%] xs:top-[50%] left-[5%] md:left-[25%]'
-			/>
 		</div>
 	);
 };

@@ -6,7 +6,6 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 
 import { experiences } from '../constants';
-import { SectionWrapper } from '../hoc';
 import SectionHeader from './SectionHeader';
 
 const ExperienceCard = ({ experience }) => {
@@ -56,23 +55,22 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
 	return (
-		<div className='intersector'>
-			<SectionHeader
-				subText='What I have done so far'
-				headText='Work Experience.'
-			/>
-			<div className='mt-20 flex flex-col'>
-				<VerticalTimeline>
-					{experiences.map((experience, index) => (
-						<ExperienceCard
-							key={`experience-${index}`}
-							experience={experience}
-						/>
-					))}
-				</VerticalTimeline>
-			</div>
-		</div>
+		<main id='experience'>
+			<section>
+				<SectionHeader subText='Transferable' headText='Work Experience.' />
+				<div className='mt-20 flex flex-col'>
+					<VerticalTimeline>
+						{experiences.map((experience, index) => (
+							<ExperienceCard
+								key={`experience-${index}`}
+								experience={experience}
+							/>
+						))}
+					</VerticalTimeline>
+				</div>
+			</section>
+		</main>
 	);
 };
 
-export default SectionWrapper(Experience, 'experience');
+export default Experience;

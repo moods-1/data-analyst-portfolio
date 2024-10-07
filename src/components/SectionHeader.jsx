@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function SectionHeader({ subText, headText }) {
+export default function SectionHeader({ subText, headText, subClass, headClass }) {
 	return (
 		<div>
-			<p className='section-sub-text'>{subText}</p>
-			<h3 className='section-head-text'>{headText}</h3>
+			<p className={`section-sub-text ${subClass}`}>{subText}</p>
+			<h3 className={`section-head-text ${headClass}`}>{headText}</h3>
 		</div>
 	);
 }

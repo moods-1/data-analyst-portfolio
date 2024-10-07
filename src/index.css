@@ -294,8 +294,17 @@ form input,
 textarea {
 	background-color: #111111;
 }
+main {
+	@apply min-h-screen w-full px-3 sm:px-10 py-5 sm:py-10;
+}
 .active {
-	color: #915eff;
+	@apply text-purple;
+}
+.section-padding {
+	@apply sm:px-10 px-4 sm:py-16 py-10;
+}
+section {
+	@apply section-padding w-full max-w-7xl mx-auto relative z-0 min-h-screen;
 }
 .hero-head-text {
 	@apply font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[40px] text-[40px] lg:leading-[98px] mt-2;
@@ -308,7 +317,4 @@ textarea {
 }
 .section-head-text {
 	@apply text-white font-black md:text-[60px] sm:text-[50px] xs:text-[25px] text-[25px];
-}
-.section-padding {
-	@apply sm:px-10 px-4 sm:py-16 py-10;
 }

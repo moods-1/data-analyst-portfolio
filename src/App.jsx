@@ -1,39 +1,28 @@
-import { useRef } from 'react';
-
 import { Mixpanel } from './components/Mixpanel';
 import {
+	Header,
 	About,
 	Contact,
 	Experience,
 	Testimonials,
 	Hero,
-	Navbar,
 	Projects,
 } from './components';
 
 const App = () => {
-	const elementsRef = useRef([]);
-	const elements = [
-		<Hero />,
-		<About />,
-		<Experience />,
-		<Projects />,
-		<Testimonials />,
-		<Contact />,
-	];
-
-	Mixpanel.track('Portfolio app accessed.', {
-		action: 'Portfolio app accessed.',
+	Mixpanel.track('Data analyst portfolio app accessed.', {
+		action: 'Data analyst portfolio app accessed.',
 	});
 
 	return (
-		<div className='relative z-0 black-gradient-v overflow-hidden'>
-			<Navbar elementsRef={elementsRef} />
-			{elements.map((element, index) => (
-				<div key={index} ref={(el) => (elementsRef.current[index] = el)}>
-					{element}
-				</div>
-			))}
+		<div>
+			<Header />
+			<Hero />
+			<About />
+			<Projects />
+			<Experience />
+			<Testimonials />
+			<Contact />
 		</div>
 	);
 };

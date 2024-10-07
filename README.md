@@ -1,8 +1,8 @@
 ## 3D Portfolio
 
-![](3dPortfolio.gif)
+![](DataAnalystPortfolio.png)
 
-This is a collection of a few projects that demonstrate some of my programming skill set. The Pizzeria appliction is a family favourite that goes all the way through a full checkout procedure (sandbox).
+This is a brief introduction of myself, that also includes testimonials of my work ethic. There are projects that demonstrate my data analytics skills.
 
 ### Portfolio Tools
 

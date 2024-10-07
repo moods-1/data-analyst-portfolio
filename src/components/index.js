@@ -1,5 +1,5 @@
 import Hero from './Hero';
-import Navbar from './Navbar';
+import Header from './Header';
 import About from './About';
 import Skills from './Skills';
 import Experience from './Experience';
@@ -9,7 +9,7 @@ import Contact from './Contact';
 
 export {
 	Hero,
-	Navbar,
+	Header,
 	About,
 	Skills,
 	Experience,
