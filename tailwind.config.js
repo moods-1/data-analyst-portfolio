@@ -19,13 +19,14 @@ module.exports = {
 			},
 			screens: {
 				xs: '450px',
+				xl: '1150px',
 			},
 			backgroundColor: {
 				purple: '#915EFF',
 				'light-purple': '#c5abff',
 			},
 			backgroundImage: {
-				'hero-pattern': "url('/src/assets/light.png')",
+				'hero-pattern': "url('/src/assets/hero-3d.png')",
 			},
 			animation: {
 				'skill-pulse': {

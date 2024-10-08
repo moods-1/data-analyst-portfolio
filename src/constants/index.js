@@ -95,6 +95,93 @@ const testimonials = [
 	},
 ];
 
+const aboutCards = [
+	{
+		title: 'Databases',
+		images: [
+			{
+				img: MySQL,
+				skill: 'MySQL',
+				color: 'rgba(30,144,255,0.2)',
+				level: '90%',
+			},
+			{
+				img: BigQuery,
+				skill: 'BigQuery',
+				color: 'rgba(30,144,255,0.2)',
+				level: '90%',
+			},
+			{
+				img: OracleDB,
+				skill: 'Oracle DB',
+				color: 'rgba(0,0,0,0.3)',
+				level: '95%',
+			}
+		],
+		subtext: 'Powerhouses that provide a structured way to store, manage, and query large datasets efficiently. They streamline the entire process, making data analysis more reliable and scalable.',
+	},
+	{
+		title: 'Spreadsheets',
+		images: [
+			{
+				img: Excel,
+				skill: 'Excel',
+				color: 'rgba(50,205,50,0.2)',
+				level: '80%',
+			},
+			{
+				img: GoogleSheets,
+				skill: 'Sheets',
+				color: 'rgba(50,205,50,0.2)',
+				level: '80%',
+			},
+		],
+		subtext: 'Ideal for working with small datasets and make it easy to organize and manipulate data with tools for sorting, filtering, and creating pivot tables. Built-in visualization features that help to represent data insights clearly.',
+	},
+	{
+		title: 'Languages',
+		images: [
+			{
+				img: SQL,
+				skill: 'SQL',
+				color: 'rgba(30,144,255,0.2)',
+				level: '90%',
+			},
+			{
+				img: R,
+				skill: 'R',
+				color: 'rgba(30,144,255,0.2)',
+				level: '90%',
+			},
+			{
+				img: Python,
+				skill: 'Python',
+				color: 'rgba(255,165,0,0.3)',
+				level: '95%',
+			},
+		],
+		subtext: 'Great tools for data cleaning and modification. R and Python have extensive library packages available for analysis and visualizations.',
+	},
+	{
+		title: 'Presentation',
+		images: [
+			{
+				img: Tableau,
+				skill: 'Tableau',
+				color: 'rgba(0,0,0,0.3)',
+				level: '95%',
+			},
+			{
+				img: Powerpoint,
+				skill: 'Powerpoint',
+				color: 'rgba(255,0,0,0.2)',
+				level: '95%',
+			},
+		],
+		subtext: 'Tableau excels at transforming complex data sets into interactive, visually compelling dashboards and reports. PowerPoint is the old reliable presentation generator.',
+	},
+];
+
 const projects = [
 	{
 		name: 'London Biking Trends',
@@ -207,15 +294,15 @@ const skills = [
 		color: 'rgba(0,0,0,0.3)',
 		level: '95%',
 	},
-	
+
 	{
 		img: Powerpoint,
 		skill: 'Powerpoint',
 		color: 'rgba(255,0,0,0.2)',
 		level: '95%',
-	}
+	},
 ];
 
-export { experiences, testimonials, projects, skills };
+export { experiences, testimonials, projects, skills, aboutCards };
 
 export const MIXPANEL_TOKEN = process.env.REACT_APP_MIXPANEL_TOKEN;
