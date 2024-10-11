@@ -12,8 +12,7 @@ const Hero = () => {
 					</p>
 					<p className='hero-sub-text'>
 						I am a data analyst with a<br className='sm:block hidden' /> passion
-						for transforming data
-						<br className='sm:block hidden' />
+						for transforming data <br className='sm:block hidden' />
 						into compelling visual experiences.
 					</p>
 				</div>
