@@ -7,6 +7,7 @@ import ClickOutsideHandler from './ClickOutsideHandler';
 const Header = () => {
 	const [toggle, setToggle] = useState(false);
 	const anchorRefs = useRef([]);
+	const mobileRefs = useRef([]);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -25,9 +26,23 @@ const Header = () => {
 					link.classList.add('active');
 				}
 			});
+			mobileRefs.current.forEach((link) => {
+				link.classList.remove('active');
+				if (link.getAttribute('href') === '#' + currentMain) {
+					link.classList.add('active');
+				}
+			});
 		};
 		window.addEventListener('scroll', handleScroll);
 		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+
+	useEffect(() => {
+		const handleResize = () => {
+			setToggle(false);
+		};
+		window.addEventListener('resize', handleResize);
+		return () => window.removeEventListener('resize', handleResize);
 	}, []);
 
 	return (
@@ -48,11 +63,8 @@ const Header = () => {
 				</li>
 
 				<ul className='list-none hidden md:flex flex-row gap-4'>
-					{Object.values(navLinks).map(({ id, title, index }, idx) => (
-						<li
-							key={id}
-							className={`text-black hover:text-purple text-[15px] font-medium cursor-pointer`}
-						>
+					{Object.values(navLinks).map(({ id, title }, idx) => (
+						<li key={id} className={`text-[15px]`}>
 							<a ref={(el) => (anchorRefs.current[idx] = el)} href={`#${id}`}>
 								{title}
 							</a>
@@ -63,28 +75,33 @@ const Header = () => {
 					outsideFunction={() => setToggle(false)}
 					className='md:hidden'
 				>
-					<div className='md:hidden relative flex flex-1 justify-end items-center'>
+					<div className='mobile-menu md:hidden relative flex flex-1 justify-end items-center'>
 						<img
 							src={toggle ? close : menu}
 							alt='menu'
-							className='w-[28px] h-[28px] object-contain'
-							onClick={() => setToggle(!toggle)}
+							className='w-[28px] h-[28px] object-contain cursor-pointer'
+							onClick={() => setToggle((prev) => !prev)}
 						/>
 						<div
 							className={`${
 								!toggle ? 'hidden' : 'flex'
-							} p-6 bg-purple absolute top-10 right-[-20px] mx-4 min-w-[140px] z-10 rounded-md`}
+							} p-6 bg-white absolute top-10 right-[-20px] mx-4 min-w-[180px] z-10 rounded-md`}
 						>
-							<ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
-								{Object.values(navLinks).map((nav) => (
+							<ul className='list-none flex justify-end items-start flex-1 flex-col gap-7'>
+								{Object.values(navLinks).map(({ id, title }, idx) => (
 									<li
-										key={nav.id}
-										className={`font-poppins font-medium cursor-pointer text-[16px] text-white`}
+										key={id}
+										className={`font-poppins text-[16px] w-full`}
 										onClick={() => {
-											setToggle(!toggle);
+											setToggle((prev) => !prev);
 										}}
 									>
-										{nav.title}
+										<a
+											ref={(el) => (mobileRefs.current[idx] = el)}
+											href={`#${id}`}
+										>
+											{title}
+										</a>
 									</li>
 								))}
 							</ul>

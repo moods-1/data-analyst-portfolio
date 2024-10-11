@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	:root{
+		--purple: #915eff;
+	}
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -22,7 +28,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: #915eff;
+	background-color: var(--purple);
 	border-radius: 5px;
 	min-height: 150px;
 }
@@ -317,4 +323,7 @@ section {
 }
 .section-head-text {
 	@apply text-white font-black md:text-[60px] sm:text-[50px] xs:text-[25px] text-[25px];
+}
+nav ul li {
+	@apply font-medium text-black hover:text-purple cursor-pointer;
 }
