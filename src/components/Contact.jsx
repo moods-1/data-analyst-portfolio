@@ -3,6 +3,8 @@ import emailjs from '@emailjs/browser';
 
 import { formValidator2 } from '../utils/helperFunctions';
 import SectionHeader from './SectionHeader';
+import { SlideAcross } from './Buttons';
+import { Mail } from '../assets';
 
 const Contact = () => {
 	const [message, setMessage] = useState({});
@@ -17,7 +19,6 @@ const Contact = () => {
 	const handleChange = (e) => {
 		const { target } = e;
 		const { name, value } = target;
-		console.log({ name });
 		let localValue;
 		if (name !== 'email') {
 			localValue = value.replace(/\s{2,}/g, ' ').trimStart();
@@ -125,12 +126,16 @@ const Contact = () => {
 									<span>{message.text}</span>
 								</div>
 							) : (
-								<button
-									className='bg-purple py-2 px-8 disabled:bg-light-purple rounded-md outline-none w-fit text-white  shadow-md shadow-primary min-w-[140px]'
-									disabled={loading}
-								>
-									{loading ? 'Sending...' : 'Send'}
-								</button>
+								<SlideAcross
+								buttonText={loading ? 'Sending...' : 'Send' }
+								value=''
+								beforeClass='bg-black'
+								buttonClass='flex-1 py-2 min-w-44 border border-purple bg-purple rounded-md text-white border'
+								beforeImg={Mail}
+								slideSpeed={2200}
+								buttonFunction={() => {}}
+								disabled={loading}
+							/>
 							)}
 						</form>
 					</div>

@@ -13,9 +13,9 @@ const About = () => {
 					href='https://drive.google.com/file/d/1IAdQcGVjguChE0fRhSvrUS1SMrCW-H52/view?usp=sharing'
 					rel='noopener noreferrer'
 					target='_blank'
-					className='bg-purple inline-block py-2 px-8 rounded-md outline-none text-white min-w-[140px] mt-3'
+					className='action-button mt-1'
 				>
-					CV/Resume
+					<span>CV/Resume</span>
 				</a>
 				<p className='mt-4 text-gray-400 text-[17px] max-w-3xl leading-[30px]'>
 					I'm a data analyst that also loves full stack development. Attention

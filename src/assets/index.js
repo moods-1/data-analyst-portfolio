@@ -2,6 +2,8 @@ import logo from './logo.png';
 import github from './github.png';
 import menu from './menu.svg';
 import close from './close.svg';
+import Mail from './mail.png';
+import Carl from './carl-no-fade.png';
 
 // Skills //
 import MongoDB from './skills/mongoDB.svg';
@@ -48,5 +50,7 @@ export {
 	Gideon,
 	Debbie,
 	LondonBiking,
-	HrAnalytics
+	HrAnalytics,
+	Carl,
+	Mail
 };

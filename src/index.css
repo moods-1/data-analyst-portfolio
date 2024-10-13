@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 @layer base {
-	:root{
+	:root {
 		--purple: #915eff;
 	}
 }
@@ -326,4 +326,24 @@ section {
 }
 nav ul li {
 	@apply font-medium text-black hover:text-purple cursor-pointer;
+}
+
+.action-button {
+	@apply overflow-hidden relative border border-purple bg-purple inline-block py-2 px-8 rounded-md outline-none text-white min-w-[140px];
+}
+.action-button span {
+	@apply relative z-10;
+}
+.action-button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	transition: all 500ms;
+	background-color: #000;
+}
+.action-button:hover::before {
+	width: 100%;
 }
