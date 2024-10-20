@@ -54,14 +54,12 @@ const experiences = [
 		iconBg: '#383E56',
 		date: 'April 2021 - June 2023',
 		points: [
-			'Maintained and updated a dynamic web-based SaaS dashboard and public website with React JS, TypeScript, Redux, Google Maps, Highcharts, React Beautiful DND, and various UI libraries',
-			'Collaborated with the design team in the creation of Figma wireframes',
-			'Worked with an international team of 12 developers, designers and QA in an Agile environment',
-			'Created REST APIs with Node.js, Express.js, and other modules with MongoDB as the database',
-			'Migrated the server to AWS, utilizing EC2 for scalable compute resources and S3 for secure data storage',
-			'Refactored the application to improve the Lighthouse Performance score by 10%, while achieving a Best Practices score of 100%, and SEO of 92% ',
-			'Conducted code/pull request reviews',
-			'Created and progressed stories with Jira, and used Bitbucket for version control',
+			'Managed a supply chain management SaaS program for over 100 micro-distribution centers (MDCs), providing real-time management of procurement, inventory, and POS activities',
+			'Migrated the server to AWS for scalable compute resources (EC2) and secure data storage (S3)',
+			'Developed REST APIs with Node.js, Express.js, and MongoDB, collaborating with the design team to ensure seamless integration of Figma wireframes',
+			'Worked in an Agile environment with an international team of 12 developers, designers, and QA',
+			'Refactored the application to improve performance, SEO, and best practice scores, while conducting code/pull request reviews to ensure high-quality code and adherence to best practices',
+			'Utilized Jira for story management and Bitbucket for version control',
 		],
 	},
 ];
@@ -116,9 +114,10 @@ const aboutCards = [
 				skill: 'Oracle DB',
 				color: 'rgba(0,0,0,0.3)',
 				level: '95%',
-			}
+			},
 		],
-		subtext: 'Powerhouses that provide a structured way to store, manage, and query large datasets efficiently. They streamline the entire process, making data analysis more reliable and scalable.',
+		subtext:
+			'Powerhouses that provide a structured way to store, manage, and query large datasets efficiently. They streamline the entire process, making data analysis more reliable and scalable.',
 	},
 	{
 		title: 'Spreadsheets',
@@ -136,7 +135,8 @@ const aboutCards = [
 				level: '80%',
 			},
 		],
-		subtext: 'Ideal for working with small datasets and make it easy to organize and manipulate data with tools for sorting, filtering, and creating pivot tables. Built-in visualization features that help to represent data insights clearly.',
+		subtext:
+			'Ideal for working with small datasets and make it easy to organize and manipulate data with tools for sorting, filtering, and creating pivot tables. Built-in visualization features that help to represent data insights clearly.',
 	},
 	{
 		title: 'Languages',
@@ -160,7 +160,8 @@ const aboutCards = [
 				level: '95%',
 			},
 		],
-		subtext: 'Great tools for data cleaning and modification. R and Python have extensive library packages available for analysis and visualizations.',
+		subtext:
+			'Great tools for data cleaning and modification. R and Python have extensive library packages available for analysis and visualizations.',
 	},
 	{
 		title: 'Presentation',
@@ -178,7 +179,8 @@ const aboutCards = [
 				level: '95%',
 			},
 		],
-		subtext: 'Tableau excels at transforming complex data sets into interactive, visually compelling dashboards and reports. PowerPoint is the old reliable presentation generator.',
+		subtext:
+			'Tableau excels at transforming complex data sets into interactive, visually compelling dashboards and reports. PowerPoint is the old reliable presentation generator.',
 	},
 ];
 
