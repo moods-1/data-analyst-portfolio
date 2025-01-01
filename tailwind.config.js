@@ -28,7 +28,24 @@ module.exports = {
 			backgroundImage: {
 				'hero-pattern': "url('/src/assets/hero-3d.png')",
 			},
+			keyframes: {
+				swipe: {
+					'50%': {
+						transform: 'translateX(40px)',
+					},
+				},
+				'fade-in': {
+					'0%': {
+						translate: 'scale(0)',
+					},
+					'100%': {
+						opacity: 1,
+					},
+				},
+			},
 			animation: {
+				swipe: 'swipe 2s ease-in-out infinite',
+				'fade-in': 'fade-in 2s ease-in 500ms forwards',
 				'skill-pulse': {
 					'50%': {
 						'box-shadow': '0px 0px 10px #fff',
