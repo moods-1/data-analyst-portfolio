@@ -9,14 +9,24 @@ const About = () => {
 		<main id='about'>
 			<section>
 				<SectionHeader subText='Introduction' headText='Overview.' />
-				<a
-					href='https://drive.google.com/file/d/1IAdQcGVjguChE0fRhSvrUS1SMrCW-H52/view?usp=sharing'
-					rel='noopener noreferrer'
-					target='_blank'
-					className='action-button mt-1'
-				>
-					<span>CV/Resume</span>
-				</a>
+				<div className='mt-1 flex flex-wrap gap-4'>
+					<a
+						href='https://drive.google.com/file/d/1IAdQcGVjguChE0fRhSvrUS1SMrCW-H52/view?usp=sharing'
+						rel='noopener noreferrer'
+						target='_blank'
+						className='action-button'
+					>
+						<span>CV/Resume</span>
+					</a>
+					<a
+						href='https://moods-creation.web.app'
+						rel='noopener noreferrer'
+						target='_blank'
+						className='action-button'
+					>
+						<span>Web Dev</span>
+					</a>
+				</div>
 				<p className='mt-4 text-gray-400 text-[17px] max-w-3xl leading-[30px]'>
 					I'm a data analyst that also loves full stack development. Attention
 					to detail and working with databases are key requirements for both.
