@@ -7,6 +7,7 @@ import {
 	R,
 	Python,
 	Tableau,
+	PowerBI,
 	Powerpoint,
 	GoogleSheets,
 	BigQuery,
@@ -173,6 +174,12 @@ const aboutCards = [
 				level: '95%',
 			},
 			{
+				img: PowerBI,
+				skill: 'Power BI',
+				color: 'rgba(255,165,0,0.3)',
+				level: '75%',
+			},
+			{
 				img: Powerpoint,
 				skill: 'Powerpoint',
 				color: 'rgba(255,0,0,0.2)',
@@ -180,7 +187,7 @@ const aboutCards = [
 			},
 		],
 		subtext:
-			'Tableau excels at transforming complex data sets into interactive, visually compelling dashboards and reports. PowerPoint is the old reliable presentation generator.',
+			'Tableau and Power BI excel at transforming complex datasets into interactive, visually compelling dashboards and reports. PowerPoint is the old reliable presentation generator.',
 	},
 ];
 

@@ -17,6 +17,7 @@ import Powerpoint from './skills/powerpoint.png';
 import GoogleSheets from './skills/google-sheets.png';
 import BigQuery from './skills/bigQuery.png';
 import OracleDB from './skills/oracle.png';
+import PowerBI from './skills/powerBi.png';
 
 import ramani from './company/ramani-icon.png';
 
@@ -43,6 +44,7 @@ export {
 	Python,
 	Tableau,
 	Powerpoint,
+	PowerBI,
 	GoogleSheets,
 	BigQuery,
 	OracleDB,
