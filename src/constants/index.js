@@ -1,5 +1,6 @@
 import {
 	ramani,
+	L3,
 	MongoDB,
 	SQL,
 	MySQL,
@@ -53,7 +54,7 @@ const experiences = [
 		company_name: 'Ramani Corporation',
 		icon: ramani,
 		iconBg: '#383E56',
-		date: 'April 2021 - June 2023',
+		date: 'Apr 2021 - Jun 2023',
 		points: [
 			'Managed a supply chain management SaaS program for over 100 micro-distribution centers (MDCs), providing real-time management of procurement, inventory, and POS activities',
 			'Migrated the server to AWS for scalable compute resources (EC2) and secure data storage (S3)',
@@ -61,6 +62,22 @@ const experiences = [
 			'Worked in an Agile environment with an international team of 12 developers, designers, and QA',
 			'Refactored the application to improve performance, SEO, and best practice scores, while conducting code/pull request reviews to ensure high-quality code and adherence to best practices',
 			'Utilized Jira for story management and Bitbucket for version control',
+		],
+	},
+	{
+		title: 'Test Engineering Specialist',
+		company_name: 'L3 Technologies',
+		icon: L3,
+		iconBg: '#ffffff',
+		date: 'Jan 2014 - Oct 2020',
+		points: [
+			'Prepared or amended test procedures and work instructions ',
+			'Analyzed current practices to look for ways to improve efficiency and reliability',
+			'Wrote reports that tracked results of implemented operational procedures',
+			'Communicated with vendors for the creation of Capital Expenditure Requests and Purchase Requisitions for spare parts and system upgrades',
+			'Implement software and hardware modifications',
+			'Calibrated and repaired test equipment',
+			'Generated system images/back-ups and restoration'
 		],
 	},
 ];

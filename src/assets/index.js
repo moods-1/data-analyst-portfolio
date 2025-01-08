@@ -20,6 +20,7 @@ import OracleDB from './skills/oracle.png';
 import PowerBI from './skills/powerBi.png';
 
 import ramani from './company/ramani-icon.png';
+import L3 from './company/L3.png';
 
 // Projects
 import LondonBiking from './london_biking.png';
@@ -36,6 +37,7 @@ export {
 	menu,
 	close,
 	ramani,
+	L3,
 	MongoDB,
 	SQL,
 	MySQL,
