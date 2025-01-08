@@ -51,7 +51,10 @@ export const navLinks = {
 const experiences = [
 	{
 		title: 'Full Stack Developer',
-		company_name: 'Ramani Corporation',
+		companyName: 'Ramani Corporation',
+		companyNameColor: 'text-green-600',
+		companyLocation: 'Dar Es Salaam, TZ',
+		workType: 'Remote',
 		icon: ramani,
 		iconBg: '#383E56',
 		date: 'Apr 2021 - Jun 2023',
@@ -66,7 +69,10 @@ const experiences = [
 	},
 	{
 		title: 'Test Engineering Specialist',
-		company_name: 'L3 Technologies',
+		companyName: 'L3 Technologies',
+		companyNameColor: 'text-red-600',
+		companyLocation: 'Toronto, ON',
+		workType: 'On-site',
 		icon: L3,
 		iconBg: '#ffffff',
 		date: 'Jan 2014 - Oct 2020',
