@@ -81,9 +81,8 @@ const experiences = [
 			'Analyzed current practices to look for ways to improve efficiency and reliability',
 			'Wrote reports that tracked results of implemented operational procedures',
 			'Communicated with vendors for the creation of Capital Expenditure Requests and Purchase Requisitions for spare parts and system upgrades',
-			'Implement software and hardware modifications',
-			'Calibrated and repaired test equipment',
-			'Generated system images/back-ups and restoration'
+			'Implemented software and hardware modifications, calibration, and repair',
+			'Generated system images/back-ups and restoration',
 		],
 	},
 ];
