@@ -21,6 +21,7 @@ import PowerBI from './skills/powerBi.png';
 
 import ramani from './company/ramani-icon.png';
 import L3 from './company/L3.png';
+import BeyondWeb from './company/beyondWebLogo.png';
 
 // Projects
 import LondonBiking from './london_biking.png';
@@ -38,6 +39,7 @@ export {
 	close,
 	ramani,
 	L3,
+	BeyondWeb,
 	MongoDB,
 	SQL,
 	MySQL,
