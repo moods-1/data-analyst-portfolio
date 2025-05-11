@@ -22,6 +22,7 @@ import PowerBI from './skills/powerBi.png';
 import ramani from './company/ramani-icon.png';
 import L3 from './company/L3.png';
 import BeyondWeb from './company/beyondWebLogo.png';
+import Relay from './company/relay.jpeg';
 
 // Projects
 import LondonBiking from './london_biking.png';
@@ -58,5 +59,6 @@ export {
 	LondonBiking,
 	HrAnalytics,
 	Carl,
-	Mail
+	Mail,
+	Relay,
 };

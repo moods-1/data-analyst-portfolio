@@ -18,7 +18,7 @@ const ExperienceCard = ({ experience }) => {
 			}}
 			contentArrowStyle={{ borderRight: '7px solid  #ddd' }}
 			date={experience.date}
-			iconStyle={{ background: 'black' }}
+			iconStyle={{ background: `${experience.iconBg}` }}
 			icon={
 				<div className='flex justify-center items-center w-full h-full'>
 					<img
